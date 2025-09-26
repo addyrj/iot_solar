@@ -1,0 +1,139 @@
+import React from "react";
+import styled from "styled-components";
+
+const Register = () => {
+  return (
+    <Wrapper>
+      <div
+        className="hold-transition dark-skin theme-primary bg-img mainLayout"
+      >
+        <div className="container h-p100">
+          <div className="row align-items-center justify-content-md-center h-p100">
+            <div className="col-12">
+              <div className="row justify-content-center g-0">
+                <div className="col-lg-5 col-md-5 col-12">
+                  <div className="bg-gray-800 rounded10 shadow-lg">
+                    <div className="content-top-agile p-20 pb-0">
+                      <h2 className="text-primary fw-600">Let's Get Started</h2>
+                      <p className="mb-0 text-fade">
+                        Sign in to continue to Solar Admin.
+                      </p>
+                    </div>
+                    <div className="p-40">
+                      <form
+                        action="https://solar-admin-template.multipurposethemes.com/bs5/template/horizontal/main-dark/index.html"
+                        method="post"
+                      >
+                        <div className="form-group">
+                          <div className="input-group mb-3">
+                            <span className="input-group-text">
+                              <i className="text-fade ti-user" />
+                            </span>
+                            <input
+                              type="text"
+                              className="form-control ps-15 "
+                              placeholder="Username"
+                            />
+                          </div>
+                        </div>
+                        <div className="form-group">
+                          <div className="input-group mb-3">
+                            <span className="input-group-text">
+                              <i className="text-fade ti-lock" />
+                            </span>
+                            <input
+                              type="password"
+                              className="form-control ps-15"
+                              placeholder="Password"
+                            />
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-6">
+                            <div className="checkbox">
+                              <input type="checkbox" id="basic_checkbox_1" />
+                              <label htmlFor="basic_checkbox_1">
+                                Remember Me
+                              </label>
+                            </div>
+                          </div>
+                          {/* /.col */}
+                          <div className="col-6">
+                            <div className="fog-pwd text-end">
+                              <a
+                                href="javascript:void(0)"
+                                className="text-primary fw-500 hover-primary"
+                              >
+                                <i className="ion ion-locked" /> Forgot pwd?
+                              </a>
+                              <br />
+                            </div>
+                          </div>
+                          {/* /.col */}
+                          <div className="col-12 text-center">
+                            <button
+                              type="submit"
+                              className="btn btn-primary w-p100 mt-10"
+                            >
+                              SIGN IN
+                            </button>
+                          </div>
+                          {/* /.col */}
+                        </div>
+                      </form>
+                      <div className="text-center">
+                        <p className="mt-15 mb-0 text-fade">
+                          Don't have an account?{" "}
+                          <a
+                            href="auth_register.html"
+                            className="text-primary ms-5"
+                          >
+                            Sign Up
+                          </a>
+                        </p>
+                      </div>
+                      <div className="text-center">
+                        <p className="mt-20 text-fade">- Sign With -</p>
+                        <p className="gap-items-2 mb-0">
+                          <a
+                            className="waves-effect waves-circle btn btn-social-icon btn-circle btn-facebook-light"
+                            href="#"
+                          >
+                            <i className="fa fa-facebook" />
+                          </a>
+                          <a
+                            className="waves-effect waves-circle btn btn-social-icon btn-circle btn-twitter-light"
+                            href="#"
+                          >
+                            <i className="fa-brands fa-x-twitter" />
+                          </a>
+                          <a
+                            className="waves-effect waves-circle btn btn-social-icon btn-circle btn-instagram-light"
+                            href="#"
+                          >
+                            <i className="fa fa-instagram" />
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Vendor JS */}
+      </div>
+    </Wrapper>
+  );
+};
+
+const Wrapper = styled.section`
+.mainLayout{
+  height: 100vh;
+  background-image: url('src/images/auth-bg/bg-16.jpg');
+}
+`;
+
+export default Register;
