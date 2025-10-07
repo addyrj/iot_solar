@@ -183,9 +183,10 @@ h1, h2, h3, .h1, .h2, .h3 {
   margin-bottom: 0.7142857143rem; }
 
 img {
-  max-width: 100%;
-background: #FFF;
-border-radius: 6px; }
+   max-width: 100%;
+    background: #837e7e;
+    border-radius: 4px;
+    margin-top: 4px; }
 
 .img-fluid {
   width: 100%;
