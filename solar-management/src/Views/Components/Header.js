@@ -97,7 +97,7 @@ const Header = () => {
           <nav className="navbar navbar-static-top">
             {/* Sidebar toggle button*/}
             <div className="app-menu">
-              <div className="search-bx" style={{ marginLeft: "20px" }}>
+              {/* <div className="search-bx" style={{ marginLeft: "20px" }}>
                 <form>
                   <div className="input-group">
                     <input
@@ -118,7 +118,7 @@ const Header = () => {
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> */}
             </div>
             <div className="navbar-custom-menu r-side">
               <ul className="nav navbar-nav">
@@ -129,10 +129,10 @@ const Header = () => {
                     
                     ">
                       <input
-  type="checkbox"
-  checked={checkTheme === "light"}
-  onChange={changeTheme}
-/>
+                        type="checkbox"
+                        checked={checkTheme === "light"}
+                        onChange={changeTheme}
+                      />
                       {/* <input
                         type="checkbox"
                         onClick={() => changeTheme()}

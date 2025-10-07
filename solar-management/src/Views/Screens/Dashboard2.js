@@ -332,7 +332,7 @@
 //     color: white; /* text color */
 //     &::placeholder {
 //       color: #a1a4b5; 
-   
+
 //     }
 //   }
 //   table, th, td {
@@ -622,25 +622,25 @@ const Dashboard2 = () => {
                     </h4>
                   </div> */}
 
-<input
-  type="text"
-  placeholder="Search Unique Id"
-  value={searchInput}
-  onChange={handleSearch}
-  style={{
-    width: "80%",
-    margin: "0px 10px 16px 16px",
-    display: "block",
-    padding: "15px 40px 15px 15px",
-    borderRadius: "3px",
-    background: `#0052cc url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23a1a4b5' viewBox='0 0 24 24'><path d='M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/></svg>") no-repeat right 10px center`,
-    backgroundSize: "18px",
-    border: "none",
-    outline: "none",
-    color: "white",
-  }}
-  className="white-placeholder"
-/>
+                  <input
+                    type="text"
+                    placeholder="Search Unique Id"
+                    value={searchInput}
+                    onChange={handleSearch}
+                    style={{
+                      width: "75%",
+                      margin: "0px 8px 16px 0px",
+                      display: "block",
+                      padding: "15px 16px 15px 9px",
+                      borderRadius: "3px",
+                      background: `#0052cc url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23a1a4b5' viewBox='0 0 24 24'><path d='M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/></svg>") no-repeat right 10px center`,
+                      backgroundSize: "18px",
+                      border: "none",
+                      outline: "none",
+                      color: "white",
+                    }}
+                    className="white-placeholder"
+                  />
 
 
 
@@ -649,24 +649,24 @@ const Dashboard2 = () => {
                     style={
                       filterModelState === false && graphState === false
                         ? {
-                          height: "600px",
-                          width: "80%",
+                        
+                          width: "75%",
                           alignSelf: "center",
-                          marginLeft: "15px",
+
                           position: "relative",
                           zIndex: "1",
                         }
                         : {
-                          height: "600px",
-                          width: "80%",
+                         
+                          width: "75%",
                           alignSelf: "center",
-                          marginLeft: "15px",
+
                           position: "relative",
-                          zIndex: "-1",
+                          zIndex: "1",
                         }
                     }
                   >
-                    <ul className="sm sm-blue" style={{ backgroundColor: "inherit" }}>
+                    <ul className="sm sm-blue" style={{ backgroundColor: "inherit", overflowY: "hidden",padding: "0" }}>
                       {paginatedUIDs.map((uid, index) => (
                         <li key={`${uid}-${index}`}>
                           <a
